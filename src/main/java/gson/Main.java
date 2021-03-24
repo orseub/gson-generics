@@ -19,9 +19,6 @@ public class Main {
         Gson gson = new Gson().newBuilder().setPrettyPrinting().create();
         MainObject<BaseObject<?>> mainObject = gson.fromJson(jsonString, collectionType);
 
-        System.out.println(gson.toJson(mainObject));
+        System.out.println(gson.toJson(mainObject)); // Should output the original input 'jsonString'
     }
-
-
-
 }
